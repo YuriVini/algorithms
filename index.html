@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="./src/index.js"></script>
+  </head>
+  <body>
+    <section>
+      <header>
+        <div class="titulo">
+          <h1>Gerador de Tabela Verdade</h1>
+        </div>
+
+        <div id="subtitulo">
+          <p>Selecione uma preposição</p>
+        </div>
+      </header>
+
+      <form>
+        <div class="formSelects">
+          <select id="selectedOption" name="Selecione" id="variaveis">
+            <option value="R">R</option>
+            <option value="Q">Q</option>
+          </select>
+
+          <label for="">Selecione um conector lógico </label>
+        </div>
+        <div class="formSelects">
+          <select id="selectedOperator" name="Selecione" id="conectivos">
+            <option value="E">^(E)</option>
+            <option value="OU">v(OU)</option>
+            <option value="OU OU">⊕(OU OU)</option>
+          </select>
+          <button type="button" value="trueTable" onclick="trueTable();">
+            Gerar uma tabela verdade
+          </button>
+          <button
+            type="button"
+            value="removeElements"
+            onclick="removeElements();"
+          >
+            Limpar tabela
+          </button>
+        </div>
+      </form>
+
+      <div id="result-title" class="result">
+        <h1 id="title"></h1>
+      </div>
+      <div id="result-table" class="result">
+        <h1 id="text-line0"></h1>
+        <h1 id="text-line1"></h1>
+        <h1 id="text-line2"></h1>
+        <h1 id="text-line3"></h1>
+      </div>
+
+      <p>AUTHOR: <a href="https://github.com/YuriVini">YURI VINICIUS</a></p>
+    </section>
+  </body>
+</html>
